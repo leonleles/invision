@@ -40,4 +40,12 @@ textarea {
   font-family: 'Muli', sans-serif;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 @import './components/grid.scss';
+@import './pages/login.scss';

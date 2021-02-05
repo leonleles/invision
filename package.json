@@ -10,6 +10,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.7",
+    "@types/yup": "^0.29.11",
     "axios": "^0.20.0",
     "formik": "^2.2.6",
     "leaflet": "^1.7.1",
@@ -20,8 +22,9 @@
     "react-leaflet": "^2.7.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.2.1",
     "swiper": "^6.4.10",
-    "typescript": "~3.7.2"
+    "yup": "^0.32.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,6 +51,7 @@
     "@types/axios": "^0.14.0",
     "@types/react-leaflet": "^2.5.2",
     "@types/react-router-dom": "^5.1.6",
-    "@types/react-slick": "^0.23.4"
+    "@types/react-slick": "^0.23.4",
+    "typescript": "^4.1.3"
   }
 }

@@ -1,0 +1,71 @@
+%label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color_silver2;
+}
+
+.login-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    + .field {
+      margin-top: 18px;
+    }
+
+    label {
+      @extend %label;
+      margin-top: 4px;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px 20px;
+      text-align: left;
+      font: normal normal normal 16px/20px Muli;
+      letter-spacing: 0px;
+      color: $color_black;
+      border: none;
+      border-bottom: 1px solid $color_black;
+
+      &::focus {
+        outline-width: 0;
+      }
+    }
+  }
+
+  .forgot-password {
+    width: 100%;
+    text-align: right;
+    margin-top: 18px;
+    @extend %label;
+  }
+
+  button[type=submit] {
+    margin-top: 30px;
+  }
+
+  .or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    .hr {
+      border: 0.5px solid $color_silver2;
+      flex-grow: 1 
+    }
+
+    span {
+      @extend %label;
+      margin: 0 20px;
+    }
+  }
+}
