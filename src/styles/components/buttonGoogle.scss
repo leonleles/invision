@@ -1,6 +1,6 @@
 .componentButtonGoogle {
   padding: 8px 30px !important;
-  height: 45px !important; 
+  height: 45px !important;
   border-radius: 45px !important;
   border: none !important;
   background: $color_white !important;
@@ -8,9 +8,9 @@
   display: flex !important;
   align-items: center !important;
   color: $color_black !important;
-  font-size: 18px !important;
-  line-height: 22px !important;
-  font-family: "Lato", sans-serif !important;
+  font-size: $font_18 !important;
+  line-height: $line_22 !important;
+  font-family: $font_family_lato !important;
 
   > div {
     display: flex;

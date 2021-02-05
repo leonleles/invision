@@ -1,13 +1,13 @@
 %label {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: $font_14;
+  line-height: $font_18;
   color: $color_silver2;
 }
 
 %link {
   color: $color_green;
-  font: normal normal normal 16px/20px;
+  font: normal normal normal $font_16/$line_18;
 }
 
 .login-form {
@@ -67,7 +67,7 @@
     text-align: center;
     span {
       color: $color_silver2;
-      font: normal normal normal 14px/20px;
+      font: normal normal normal $font_14/$line_20;
       font-weight: normal;
     }
 
