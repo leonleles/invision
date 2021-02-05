@@ -1,19 +1,21 @@
 import React from 'react';
-import styled from "styled-components";
+import GoogleLogin from 'react-google-login';
 
-const ButtonGoogle = styled.button`
-  padding: 8px 30px;
-  height: 45px;
-  border-radius: 45px;
-  border: none;
-  background: #fff;
-  box-shadow: 0px 3px 6px #00000029;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  font-size: 18px;
-  line-height: 22px;
-  font-family: 'Lato', sans-serif;
-`;
+function ButtonGoogle() {
+  const responseGoogle = (response) => {
+    console.log(response);
+  }
+
+  return (
+    <GoogleLogin
+      className="componentButtonGoogle"
+      clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+      buttonText="Sign up with Google"
+      onSuccess={responseGoogle}
+      onFailure={responseGoogle}
+      cookiePolicy={'single_host_origin'}
+    />
+  );
+}
 
 export default ButtonGoogle;

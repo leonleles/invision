@@ -4,6 +4,7 @@ $color_silver2: #707070;
 $color_green: #A9C5BA;
 $color_black: #000000;
 $color_red: #ec4949;
+$color_shadow: #00000029;
 
 * {
   margin: 0;
@@ -49,4 +50,6 @@ button:focus {
 }
 
 @import './components/grid.scss';
+@import './components/buttonGoogle.scss';
+@import './components/form.scss';
 @import './pages/login.scss';

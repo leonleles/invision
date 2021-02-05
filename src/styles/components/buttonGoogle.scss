@@ -1,0 +1,21 @@
+.componentButtonGoogle {
+  padding: 8px 30px !important;
+  height: 45px !important; 
+  border-radius: 45px !important;
+  border: none !important;
+  background: $color_white !important;
+  box-shadow: 0px 3px 6px $color_shadow !important;
+  display: flex !important;
+  align-items: center !important;
+  color: $color_black !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-family: "Lato", sans-serif !important;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 !important;
+  }
+}

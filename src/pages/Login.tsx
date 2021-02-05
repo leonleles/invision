@@ -7,8 +7,6 @@ import Grid from '../components/Grid';
 import Button from '../components/Button';
 import ButtonGoogle from '../components/ButtonGoogle';
 
-import imageGoogle from '../images/google.svg';
-
 function Login() {
   const messageRequired = '* Este campo não pode ser vazio.';
   const messageMailError = 'O e-mail está incorreto';
@@ -54,19 +52,17 @@ function Login() {
         onSubmit={() => { }}
       >
         {({ errors, touched, isSubmitting, setFieldValue }) => {
-          // const [user, setUser] = useState({});
-          // const [showPassword, setShowPassword] = useState(false);
 
           return (
             <Form className="login-form">
-              <div className="field">
+              <div className="field-group">
                 <label>Users name or Email</label>
                 <Field name="email" type="text"
                   className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
                 <ErrorMessage name="email" component="div" className="invalid-feedback" />
               </div>
 
-              <div className="field">
+              <div className="field-group">
                 <label>Password</label>
                 <Field name="password" type="password" className={'form-control' + (errors.password && touched.password ? ' is-invalid' : '')} />
                 <ErrorMessage name="password" component="div" className="invalid-feedback" />
@@ -82,10 +78,7 @@ function Login() {
                 <div className="hr"></div>
               </div>
 
-              <ButtonGoogle className='buttonGoogle'>
-                <img src={imageGoogle} alt="Google Logo" />
-                Sign in with Google
-                </ButtonGoogle>
+              <ButtonGoogle />
 
               <p className="createAccount">
                 <span>New <b>Invision</b>? </span>
