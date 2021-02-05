@@ -25,6 +25,10 @@
     &::focus {
       outline-width: 0;
     }
+
+    &.is-invalid {
+      border-bottom-color: $color_red;
+    }
   }
 
   .invalid-feedback {
