@@ -12,7 +12,8 @@ const ButtonGoogle = styled.button`
   align-items: center;
   color: #000000;
   font-size: 18px;
-  line-height: 22px
+  line-height: 22px;
+  font-family: 'Lato', sans-serif;
 `;
 
 export default ButtonGoogle;

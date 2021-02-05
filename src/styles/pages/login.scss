@@ -39,6 +39,14 @@
         outline-width: 0;
       }
     }
+
+    .invalid-feedback {
+      width: 100%;
+      @extend %label;
+      color: $color_red;
+      margin-top: 8px;
+      padding: 0 20px;
+    }
   }
 
   .forgot-password {
@@ -48,7 +56,7 @@
     @extend %label;
   }
 
-  button[type=submit] {
+  button[type="submit"] {
     margin-top: 30px;
   }
 
@@ -60,12 +68,33 @@
 
     .hr {
       border: 0.5px solid $color_silver2;
-      flex-grow: 1 
+      flex-grow: 1;
     }
 
     span {
       @extend %label;
       margin: 0 20px;
+    }
+  }
+
+  .buttonGoogle {
+    margin: 40px 0;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  .createAccount {
+  
+    span {
+      color: $color_silver2;
+      font: normal normal normal 14px/20px;
+    }
+
+    a {
+      color: $color_green;
+      font: normal normal normal 16px/20px;
     }
   }
 }

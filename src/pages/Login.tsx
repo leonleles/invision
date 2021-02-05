@@ -7,6 +7,8 @@ import Grid from '../components/Grid';
 import Button from '../components/Button';
 import ButtonGoogle from '../components/ButtonGoogle';
 
+import imageGoogle from '../images/google.svg';
+
 function Login() {
   const messageRequired = '* Este campo não pode ser vazio.';
   const messageMailError = 'O e-mail está incorreto';
@@ -80,7 +82,15 @@ function Login() {
                 <div className="hr"></div>
               </div>
 
-              <ButtonGoogle>Sign in with Google</ButtonGoogle>
+              <ButtonGoogle className='buttonGoogle'>
+                <img src={imageGoogle} alt="Google Logo" />
+                Sign in with Google
+                </ButtonGoogle>
+
+              <p className="createAccount">
+                <span>New <b>Invision</b>? </span>
+                <Link to='createaccount'>Create Account</Link>
+              </p>
             </Form>
           );
         }}
